@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    background-color: #050c41;
+    color: #fff;
+}
+
+.main-body {
+    padding: 75px;
+}
+
+.quater-results {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.quater-points{
+    display: flex;
+    flex-direction: column;
+}
+
+.quater-results{
+    display: flex;
+}
+
+.quater-circle{
+    display: flex;
+}
+
+.quater-circle-q1, .quater-circle-q2, .quater-circle-q3, .quater-circle-q4{
+    border-radius: 50%;
+    background-color: aliceblue;
+    width: 12px;
+    height: 12px;
+
+    &.q1{
+        background-color: #22A75D;
+    }
+    &.q2{
+        background-color: #2278D4;
+    }
+    &.q3{
+        background-color: #FFD100;
+    }
+    &.q4{
+        background-color: #E20613;
+    }
+}
+
+.year2021{
+    margin: unset;
+}
+
+.quater-circle-small{
+    justify-content: end;
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+
+
+.quarter-circle-big {
+    display: flex;
+    border-radius: 50%;
+    background-color: aliceblue;
+    width: 82px;
+    height: 82px;
+
+    .q1-value, .q2-value, .q3-value,.q4-value {
+        margin: auto;
+        background-color: unset;
+        color: black;
+    }
+
+    &.q1{
+        background-color: #22A75D;
+    }
+    &.q2{
+        background-color: #2278D4;
+    }
+    &.q3{
+        background-color: #FFD100;
+    }
+    &.q4{
+        background-color: #E20613;
+    }
+
+
+}
+
+.main-container {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: centu;
+
+    .description3, .description4 {
+        color:#9FA1A6;
+    }
+}
+
+.description-body{
+    margin-bottom: 25px;
+}
+
+.button-body{
+
+    .read-btn{
+        font-size: 14px;
+        width: 147px;
+        height: 48px;
+        border-radius: 52px;
+        border: 2px solid #22A75D;
+
+    }
+}
+
+
+/* @media screen max-width: 768px {
+
+    .main-container{
+        box-sizing: border-box;
+
+    }
+    
+} */
+
+@media only screen and (max-width: 768px){
+    
+   
+    *{
+        /* background-color: rgb(157, 106, 40); */
+
+    }
+
+    .quater-results{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .main-body{
+        display: inline-block;
+        font-size: 25px;
+        padding: 75px;
+    }
+
+    .left-container{
+        display: none;
+    }
+}
